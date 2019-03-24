@@ -1,5 +1,5 @@
 {
-  "name": "node-microservice-utils",
+  "name": "node-microservice-utilities",
   "version": "1.0.0",
   "main": "./dist/index.ts",
   "repository": "git@github.com:Verikon/node-service-utils.git",
