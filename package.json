@@ -1,6 +1,6 @@
 {
   "name": "node-microservice-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.ts",
   "repository": "git@github.com:Verikon/node-service-utils.git",
   "author": "Bren Norris <bren@launchboard.com>",
