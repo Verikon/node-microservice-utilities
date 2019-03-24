@@ -1,0 +1,26 @@
+{
+  "name": "node-service-utils",
+  "version": "1.0.0",
+  "main": "./dist/index.ts",
+  "repository": "git@github.com:Verikon/node-service-utils.git",
+  "author": "Bren Norris <bren@launchboard.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha -r ts-node/register ./spec/**/*.ts",
+    "test:one": "mocha -r ts-node/register ",
+    "compile": "tsc"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.11.6",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "@types/is-reachable": "^3.0.0",
+    "is-reachable": "^3.0.0"
+  }
+}

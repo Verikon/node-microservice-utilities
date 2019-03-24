@@ -1,0 +1,1 @@
+export {awaitURL} from './awaitURL';
