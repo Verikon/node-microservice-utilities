@@ -1,1 +1,2 @@
-export {awaitURL} from './awaitURL';
+export {awaitURL} from './methods/awaitURL';
+export {getModuleInfo} from './methods/getModuleInfo';
