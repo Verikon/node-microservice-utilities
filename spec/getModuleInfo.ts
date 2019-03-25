@@ -13,6 +13,7 @@ describe(`Tests for method: getModuleInfo`, function() {
             assert(result.devDependency === true, 'failed');
             assert(result.peerDependency === false, 'failed');
             assert(result.version, 'failed');
+            console.log('#>>>>', result);
         });
 
     });

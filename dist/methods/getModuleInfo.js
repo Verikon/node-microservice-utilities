@@ -28,6 +28,7 @@ function getModuleInfo(pkg, options) {
         if (!result.dependency && !result.devDependency)
             throw new Error(`Module ${pkg} not found in package.json as either a dependency of devDependency`);
         result.version = contents.dependencies[pkg] || contents.devDependencies[pkg];
+        result.version = result.version.replace(/\^|@|~/g, '');
         return result;
     });
 }
