@@ -31,7 +31,7 @@ export async function awaitURL( url:string, options?:IawaitURLOptions ):Promise<
             if(alive) {
 
                 if(!options.silent)
-                    console.log(`connected to downstream PRISMA server at ${process.env.AUTH_PRISMA_URI}`);
+                    console.log(`connected to ${url}`);
 
                 clearInterval(i);
                 resolve(true);
@@ -39,7 +39,7 @@ export async function awaitURL( url:string, options?:IawaitURLOptions ):Promise<
             } else {
 
                 if(!options.silent)
-                console.log(`waiting for downstream PRISMA server at ${process.env.AUTH_PRISMA_URI}`)
+                console.log(`failed to connect to ${url}, trying again in ${options.retryInterval}ms`);
 
             }
 

@@ -30,13 +30,13 @@ function awaitURL(url, options) {
                 const alive = yield is_reachable_1.default(url);
                 if (alive) {
                     if (!options.silent)
-                        console.log(`connected to downstream PRISMA server at ${process.env.AUTH_PRISMA_URI}`);
+                        console.log(`connected to ${url}`);
                     clearInterval(i);
                     resolve(true);
                 }
                 else {
                     if (!options.silent)
-                        console.log(`waiting for downstream PRISMA server at ${process.env.AUTH_PRISMA_URI}`);
+                        console.log(`failed to connect to ${url}, trying again in ${options.retryInterval}ms`);
                 }
             }), options.retryInterval);
         });
