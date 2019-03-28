@@ -10,5 +10,5 @@ options is an object with the following properties:
 
 ```
 let ready;
-awaitURL().then(_=> ready = true);
+awaitURL('http://google.com', {silent:false)).then(_=> ready = true);
 ```
